@@ -1,0 +1,100 @@
+@font-face {
+  font-family: main-font;
+  src: url(fonts/norwester.otf); }
+
+@font-face {
+  font-family: body-font;
+  src: url(fonts/Lato-Regular.ttf); }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: #FFF; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1680px;
+  padding: 0 30px; }
+
+h1, h2, h3 {
+  font-family: main-font;
+  line-height: 1.8;
+  font-weight: normal;
+  margin-top: 0; }
+
+h2 {
+  font-size: 38px; }
+
+h3 {
+  font-size: 24px; }
+
+label {
+  font-family: main-font;
+  font-size: 22px;
+  flex: 1; }
+
+p, a {
+  font-family: body-font; }
+
+.category__check input[type="checkbox"] {
+  display: none; }
+
+.category__check label {
+  cursor: pointer; }
+  .category__check label:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 15px;
+    width: 15px;
+    border: 5px solid #E5E8F1;
+    background: #E5E8F1;
+    margin-right: 10px; }
+
+.category__check input[type="checkbox"]:checked + label:before {
+  background: #80828F; }
+
+.product__filter {
+  background: #BD1818;
+  padding: 20px;
+  color: #FFF; }
+
+.product__filters {
+  display: flex; }
+
+.product__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px -30px 0 -30px; }
+
+.product__item {
+  vertical-align: top;
+  display: inline-block;
+  width: 16.66667%;
+  padding: 0 30px;
+  margin-bottom: 20px; }
+  .product__item img {
+    transition: 0.2s;
+    width: 100%;
+    margin-bottom: 20px; }
+  .product__item:hover img {
+    transform: scale(1.1); }
+
+.product__inner {
+  /*border-top: 1px solid #333;
+		border-bottom: 1px solid #111;*/ }
+
+.product__reset {
+  display: inline-block;
+  cursor: pointer;
+  font-family: main-font;
+  font-size: 24px;
+  background: #FA2B2B;
+  padding: 12px 14px;
+  margin-top: 20px;
+  min-width: 150px;
+  transition: 0.2s; }
+  .product__reset:hover {
+    background: #ec0606; }
